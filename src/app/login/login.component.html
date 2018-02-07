@@ -1,0 +1,32 @@
+<button (click)=getPostsButton()>get posts</button>
+<button (click)=confirmModal()> open </button>
+<div *ngIf=modalDisplay class="modal">
+  <div class="modal-content">
+    <span (click)=closeModal() class="close">&times;</span>
+    <div style="text-align: center;">Are you sure?
+      <br>
+      <br>Please confirm password
+      <br>
+      <br>
+      <input placeholder="Enter Password" style="border: 1px solid black; line-height: 20px; padding-left: 15px">
+    </div>
+  </div>
+</div>
+<table>
+  <tr>
+    <td style="width: 80px">
+      Email:
+    </td>
+    <td>
+      <input type="" name="">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Password:
+    </td>
+    <td>
+      <input type="" name="">
+    </td>
+  </tr>
+</table>
